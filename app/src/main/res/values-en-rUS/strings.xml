@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CMPR1</string>
+    <string name="elec">Electricity</string>
+    <string name="inter">Ethernet</string>
+    <string name="gas">Gas</string>
+    <string name="agua">Water</string>
+    <string name="go_pago">Go to Pay</string>
+    <string name="selec_serv">Select services to pay</string>
+    <string name="elec_secl">Service Electricity selected</string>
+    <string name="inter_secl">Service Ethernet selected</string>
+    <string name="agua_secl">Service Water selected</string>
+    <string name="gas_secl">Service Gas selected</string>
+    <string name="req_inf">Data Requiered</string>
+    <string name="ask_info">Complete the requiered information</string>
+    <string name="hint_nums">****************</string>
+    <string name="hint_cvv">***</string>
+    <string name="hint_nombre">Name</string>
+    <string name="pg_desc">Enter the information requested to pay</string>
+    <string name="pg_numtj">Card number</string>
+    <string name="pg_date">Date of Expiration</string>
+    <string name="pg_cvv">CVV</string>
+    <string name="pg_tjnom">Cardholder</string>
+    <string name="pg_correo">E-mail</string>
+    <string name="pg_efpago">Make Payment</string>
+    <string name="pg_total">Total to Pay</string>
+    <string name="op_expop">Operation Succeded</string>
+    <string name="op_flpop">Failure in the operaction. Try again</string>
+</resources>

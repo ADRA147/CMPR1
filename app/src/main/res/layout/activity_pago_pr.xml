@@ -5,6 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#8000BCD4"
     tools:context=".PagoPrAct">
 
     <TextView
@@ -35,27 +36,31 @@
 
     <EditText
         android:id="@+id/etNums"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="237dp"
+        android:layout_height="65dp"
+        android:backgroundTint="@color/black"
         android:ems="10"
-        android:hint="**** **** **** ****"
+        android:hint="@string/hint_nums"
         android:inputType="number"
         android:maxLength="16"
+        android:text="@string/hint_nums"
+        android:textColorLink="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.786"
+        app:layout_constraintHorizontal_bias="0.977"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.196" />
+        app:layout_constraintVertical_bias="0.183" />
 
     <EditText
         android:id="@+id/etCVV"
-        android:layout_width="111dp"
-        android:layout_height="40dp"
+        android:layout_width="127dp"
+        android:layout_height="54dp"
         android:ems="10"
         android:hint="CVV"
         android:inputType="number"
         android:maxLength="3"
+        android:text="@string/hint_cvv"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.906"
@@ -65,22 +70,23 @@
 
     <EditText
         android:id="@+id/etDate"
-        android:layout_width="181dp"
-        android:layout_height="42dp"
+        android:layout_width="136dp"
+        android:layout_height="56dp"
         android:ems="10"
         android:hint="Mes/Año"
         android:inputType="number"
+        android:maxLength="4"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.081"
+        app:layout_constraintHorizontal_bias="0.123"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.454" />
+        app:layout_constraintVertical_bias="0.441" />
 
     <EditText
         android:id="@+id/etCorreo"
-        android:layout_width="338dp"
-        android:layout_height="45dp"
+        android:layout_width="378dp"
+        android:layout_height="53dp"
         android:ems="10"
         android:hint="ejemplo@correo.com"
         android:inputType="textEmailAddress"
@@ -95,7 +101,7 @@
         android:id="@+id/tvNumTar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Número de Tarjeta"
+        android:text="@string/pg_numtj"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -108,7 +114,7 @@
         android:id="@+id/tvDateV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Fecha de Vencimiento"
+        android:text="@string/pg_date"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -121,7 +127,7 @@
         android:id="@+id/tvCvv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="CVV"
+        android:text="@string/pg_cvv"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -134,7 +140,7 @@
         android:id="@+id/tvNomb"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Tarjeta Habiente"
+        android:text="@string/pg_tjnom"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -147,7 +153,7 @@
         android:id="@+id/tvCorreo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Correo ELectrónico"
+        android:text="@string/pg_correo"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -158,11 +164,12 @@
 
     <EditText
         android:id="@+id/etNomTH"
-        android:layout_width="343dp"
-        android:layout_height="45dp"
+        android:layout_width="401dp"
+        android:layout_height="60dp"
         android:ems="10"
         android:hint="Nombre"
         android:inputType="text"
+        android:text="@string/hint_nombre"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.191"
@@ -174,7 +181,7 @@
         android:id="@+id/tvTotal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Total a Pagar"
+        android:text="@string/pg_total"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -194,4 +201,15 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.932" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="150dp"
+        android:layout_height="66dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.034"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.175" />
 </androidx.constraintlayout.widget.ConstraintLayout>

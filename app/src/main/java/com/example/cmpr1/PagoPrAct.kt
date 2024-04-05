@@ -1,5 +1,6 @@
 package com.example.cmpr1
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
@@ -36,29 +37,31 @@ class PagoPrAct : AppCompatActivity() {
 
         binding.btEfecPago.setOnClickListener(){
             if (binding.etNums.text.isEmpty()){
-                Toast.makeText(this, "Complete la información solicitada", Toast.LENGTH_LONG).show()
-                binding.etNums.error = "Campo requerido"
+                Toast.makeText(this, resources.getString(R.string.ask_info), Toast.LENGTH_LONG).show()
+                binding.etNums.error = getString(R.string.req_inf)
                 binding.etNums.requestFocus()
             } else if (binding.etDate.text.isEmpty()) {
-                Toast.makeText(this, "Complete la información solicitada", Toast.LENGTH_LONG).show()
-                binding.etDate.error = "Campo requerido"
+                Toast.makeText(this, resources.getString(R.string.ask_info), Toast.LENGTH_LONG).show()
+                binding.etDate.error = getString(R.string.req_inf)
                 binding.etDate.requestFocus()
             } else if (binding.etCVV.text.isEmpty()){
-                Toast.makeText(this, "Complete la información solicitada", Toast.LENGTH_LONG).show()
-                binding.etCVV.error = "Campo requerido"
+                Toast.makeText(this, resources.getString(R.string.ask_info), Toast.LENGTH_LONG).show()
+                binding.etCVV.error = getString(R.string.req_inf)
                 binding.etCVV.requestFocus()
             } else if (binding.etNomTH.text.isEmpty()) {
-                Toast.makeText(this, "Complete la información solicitada", Toast.LENGTH_LONG).show()
-                binding.etNomTH.error = "Campo requerido"
+                Toast.makeText(this, resources.getString(R.string.ask_info), Toast.LENGTH_LONG).show()
+                binding.etNomTH.error = getString(R.string.req_inf)
                 binding.etNomTH.requestFocus()
             } else if (binding.etCorreo.text.isEmpty()){
-                Toast.makeText(this, "Complete la información solicitada", Toast.LENGTH_LONG).show()
-                binding.etCorreo.error = "Campo requerido"
+                Toast.makeText(this, resources.getString(R.string.ask_info), Toast.LENGTH_LONG).show()
+                binding.etCorreo.error = getString(R.string.req_inf)
                 binding.etCorreo.requestFocus()
             } else if (Random.nextInt(0,3) == 3) {
-                Toast.makeText(this, "Operación exitosa", Toast.LENGTH_LONG).show()
+                val intent = Intent(this, OpESAct::class.java)
+                startActivity(intent)
             } else {
-                Toast.makeText(this, "Fallo en la operación. Intente nuevamente", Toast.LENGTH_LONG).show()
+                val intent = Intent(this, OpESAct::class.java)
+                startActivity(intent)
             }
         }
     }

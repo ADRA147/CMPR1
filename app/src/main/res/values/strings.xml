@@ -1,3 +1,28 @@
 <resources>
     <string name="app_name">CMPR1</string>
+    <string name="elec">Electricidad</string>
+    <string name="inter">Internet</string>
+    <string name="gas">Gas</string>
+    <string name="agua">Agua</string>
+    <string name="go_pago">Ir a Pago</string>
+    <string name="selec_serv">Seleccione servicios a pagar</string>
+    <string name="elec_secl">Servicio Electricidad seleccionado</string>
+    <string name="inter_secl">Servicio Internet seleccionado</string>
+    <string name="agua_secl">Servicio Agua seleccionado</string>
+    <string name="gas_secl">Servicio Gas seleccionado</string>
+    <string name="req_inf">Campo Requerido</string>
+    <string name="ask_info">Complete la información requerida</string>
+    <string name="hint_nums">****************</string>
+    <string name="hint_cvv">***</string>
+    <string name="hint_nombre">Nombre</string>
+    <string name="pg_desc">Ingrese la información solicitada para pagar</string>
+    <string name="pg_numtj">Número de tarjeta</string>
+    <string name="pg_date">Fecha de vencimiento</string>
+    <string name="pg_cvv">CVV</string>
+    <string name="pg_tjnom">Tarjeta Habiente</string>
+    <string name="pg_correo">Correo electrónico</string>
+    <string name="pg_efpago">Efectuar Pago</string>
+    <string name="pg_total">Total a Pagar</string>
+    <string name="op_expop">Operación Exitosa</string>
+    <string name="op_flpop">Fallo en la operación. Intente nuevamente</string>
 </resources>
