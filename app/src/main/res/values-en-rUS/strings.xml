@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="app_name">CMPR1</string>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name" tools:ignore="Typos">CMPR1</string>
     <string name="elec">Electricity</string>
     <string name="inter">Ethernet</string>
     <string name="gas">Gas</string>
@@ -26,8 +26,9 @@
     <string name="pg_total">Total to Pay</string>
     <string name="pg_correo_hint">example@mail.com</string>
     <string name="pg_correo_error">Incorrect Email Format</string>
-    <string name="op_expop">Operation Succeded</string>
+    <string name="op_expop">Operation Succeeded</string>
     <string name="op_flpop">Failure in the operaction. Try again.</string>
+    <string name="obl_todo">todo to avoid wargings</string>
     <string-array name="tj_names" >
         <item>Select credit card</item>
         <item>Visa</item>

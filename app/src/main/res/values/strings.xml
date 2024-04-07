@@ -1,5 +1,5 @@
-<resources>
-    <string name="app_name">CMPR1</string>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name" tools:ignore="Typos">CMPR1</string>
     <string name="elec">Electricidad</string>
     <string name="inter">Internet</string>
     <string name="gas">Gas</string>
@@ -27,6 +27,7 @@
     <string name="pg_correo_error">Formato de correo incorrecto</string>
     <string name="op_expop">Operación Exitosa</string>
     <string name="op_flpop">Fallo en la operación. Intente nuevamente.</string>
+    <string name="obl_todo">todo para evitar wargings</string>
     <string-array name="tj_names" >
         <item>Seleccione tarjeta de crédito</item>
         <item>Visa</item>
