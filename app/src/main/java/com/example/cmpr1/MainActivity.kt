@@ -2,7 +2,6 @@ package com.example.cmpr1
 
 import android.content.Intent
 import android.os.Bundle
-import android.view.View
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -25,44 +24,36 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    fun btIrPagofun(view: View) {
+    fun btIrPagofun() {
         startActivity(intent)
     }
-    fun btGasfun(view: View) {
+    fun btGasfun() {
         Toast.makeText(this, resources.getString(R.string.gas_secl), Toast.LENGTH_SHORT).show()
         val rndpay1 = Random.nextInt(0,3000)
         val params = Bundle()
         params.putInt("gas", rndpay1)
-        //val intent = Intent(this, PagoPrAct::class.java)
         intent.putExtras(params)
-        //startActivity(intent)
     }
-    fun btAguafun(view: View) {
+    fun btAguafun() {
         Toast.makeText(this, resources.getString(R.string.agua_secl), Toast.LENGTH_SHORT).show()
-        val rndpay2 = Random.nextInt(0,500)
+        val rndpay2 = Random.nextInt(0,1000)
         val params = Bundle()
         params.putInt("agua", rndpay2)
-        //val intent = Intent(this, PagoPrAct::class.java)
         intent.putExtras(params)
-        //startActivity(intent)
     }
-    fun btIntfun(view: View) {
+    fun btIntfun() {
         Toast.makeText(this, resources.getString(R.string.inter_secl), Toast.LENGTH_SHORT).show()
         val rndpay3 = Random.nextInt(0,1000)
         val params = Bundle()
         params.putInt("inter", rndpay3)
-        //val intent = Intent(this, PagoPrAct::class.java)
         intent.putExtras(params)
-        //startActivity(intent)
     }
-    fun btElecfun(view: View) {
+    fun btElecfun() {
         Toast.makeText(this, resources.getString(R.string.elec_secl), Toast.LENGTH_SHORT).show()
-        val rndpay4 = Random.nextInt(0,300)
+        val rndpay4 = Random.nextInt(0,500)
         val params = Bundle()
         params.putInt("elec", rndpay4)
-        //val intent = Intent(this, PagoPrAct::class.java)
         intent.putExtras(params)
-        //startActivity(intent)
     }
 
 }

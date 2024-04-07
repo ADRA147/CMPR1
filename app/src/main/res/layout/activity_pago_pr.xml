@@ -12,7 +12,7 @@
         android:id="@+id/tvInginfo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Ingrese la información solicitada para pagar"
+        android:text="@string/pg_desc"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -25,7 +25,7 @@
         android:id="@+id/btEfecPago"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Efectuar Pago"
+        android:text="@string/pg_efpago"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -43,7 +43,6 @@
         android:hint="@string/hint_nums"
         android:inputType="number"
         android:maxLength="16"
-        android:text="@string/hint_nums"
         android:textColorLink="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -57,45 +56,15 @@
         android:layout_width="127dp"
         android:layout_height="54dp"
         android:ems="10"
-        android:hint="CVV"
+        android:hint="@string/hint_cvv"
         android:inputType="number"
         android:maxLength="3"
-        android:text="@string/hint_cvv"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.906"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.454" />
-
-    <EditText
-        android:id="@+id/etDate"
-        android:layout_width="136dp"
-        android:layout_height="56dp"
-        android:ems="10"
-        android:hint="Mes/Año"
-        android:inputType="number"
-        android:maxLength="4"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.123"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.441" />
-
-    <EditText
-        android:id="@+id/etCorreo"
-        android:layout_width="378dp"
-        android:layout_height="53dp"
-        android:ems="10"
-        android:hint="ejemplo@correo.com"
-        android:inputType="textEmailAddress"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.262"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.749" />
 
     <TextView
         android:id="@+id/tvNumTar"
@@ -164,15 +133,14 @@
 
     <EditText
         android:id="@+id/etNomTH"
-        android:layout_width="401dp"
-        android:layout_height="60dp"
+        android:layout_width="378dp"
+        android:layout_height="68dp"
         android:ems="10"
-        android:hint="Nombre"
+        android:hint="@string/hint_nombre"
         android:inputType="text"
-        android:text="@string/hint_nombre"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.191"
+        app:layout_constraintHorizontal_bias="0.393"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.609" />
@@ -188,7 +156,7 @@
         app:layout_constraintHorizontal_bias="0.107"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.828" />
+        app:layout_constraintVertical_bias="0.872" />
 
     <TextView
         android:id="@+id/tvResTot"
@@ -197,13 +165,13 @@
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.184"
+        app:layout_constraintHorizontal_bias="0.157"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.932" />
+        app:layout_constraintVertical_bias="0.94" />
 
     <Spinner
-        android:id="@+id/spinner"
+        android:id="@+id/spinnerTJ"
         android:layout_width="150dp"
         android:layout_height="66dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -212,4 +180,60 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.175" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/etMail"
+        android:layout_width="272dp"
+        android:layout_height="48dp"
+        android:hint="@string/pg_correo_hint"
+        android:inputType="textEmailAddress"
+        android:maxLength="50"
+        android:minHeight="48dp"
+        android:textColorHint="#78909C"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.115"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.74"
+        tools:visibility="visible" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tiLayEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/pg_correo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/etMail"
+        app:layout_constraintTop_toBottomOf="@+id/etMail"
+        app:layout_constraintVertical_bias="0.0"
+        tools:visibility="visible" />
+
+    <Spinner
+        android:id="@+id/spnAnn"
+        android:layout_width="109dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="68dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.413"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spnMes"
+        android:layout_width="105dp"
+        android:layout_height="65dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="9dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.042"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.455" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

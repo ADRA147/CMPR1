@@ -23,6 +23,44 @@
     <string name="pg_correo">Correo electrónico</string>
     <string name="pg_efpago">Efectuar Pago</string>
     <string name="pg_total">Total a Pagar</string>
+    <string name="pg_correo_hint">ejemplo@mail.com</string>
+    <string name="pg_correo_error">Formato de correo incorrecto</string>
     <string name="op_expop">Operación Exitosa</string>
-    <string name="op_flpop">Fallo en la operación. Intente nuevamente</string>
+    <string name="op_flpop">Fallo en la operación. Intente nuevamente.</string>
+    <string-array name="tj_names" >
+        <item>Seleccione tarjeta de crédito</item>
+        <item>Visa</item>
+        <item>Mastercard</item>
+        <item>American Express</item>
+    </string-array>
+    <string-array name="date_mes" >
+        <item>Mes</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+    <string-array name="date_ann" >
+        <item>Año</item>
+        <item>2024</item>
+        <item>2025</item>
+        <item>2026</item>
+        <item>2027</item>
+        <item>2028</item>
+        <item>2029</item>
+        <item>2030</item>
+        <item>2031</item>
+        <item>2032</item>
+        <item>2033</item>
+        <item>2034</item>
+        <item>2035</item>
+    </string-array>
 </resources>
